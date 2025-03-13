@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Personal Trainer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 id="title">Pedro Personal Trainer</h1>
+        <p id="description">Preencha o formulário abaixo para que possamos criar um plano de treino personalizado para você!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+            <div id="input-fields">
+                <label id="name-label"><b>Nome:</b></label>
+                <input id="name" type="text" name="name" class="form" required placeholder="Seu nome completo"><br>
+                <br>
+                <label id="email-label"><b>Email:</b></label>
+                <input id="email" type="email" name="email" class="form" required placeholder="exemplo@email.com"><br>
+                <br>
+                <label id="number-label"><b>Idade:</b></label>
+                <input id="number" type="number" name="age" class="form" min="12" max="99" placeholder="Sua idade"><br>
+            </div>
+            <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Qual é o seu principal objetivo?</strong></label><br>
+                <select id="dropdown" name="goal" class="form">
+                    <option value="weight-loss">Perda de peso</option>
+                    <option value="muscle-gain">Ganho de massa muscular</option>
+                    <option value="endurance">Melhoria de resistência</option>
+                    <option value="flexibility">Aumento de flexibilidade</option>
+                    <option value="general-fitness">Condicionamento físico geral</option>
+                </select>
+            </div>
+            <div id="button-area">
+                <br>
+                <label id="frequency-label"><b>Com que frequência você se exercita atualmente?</b></label><br>
+                <input type="radio" class="radio-inline" name="exercise-frequency" value="always"> Diariamente<br>
+                <input type="radio" class="radio-inline" name="exercise-frequency" value="often"> Frequentemente (3-5 vezes por semana)<br>
+                <input type="radio" class="radio-inline" name="exercise-frequency" value="sometimes"> Algumas vezes por semana<br>
+                <input type="radio" class="radio-inline" name="exercise-frequency" value="rarely"> Raramente<br>
+                <input type="radio" class="radio-inline" name="exercise-frequency" value="never"> Nunca<br>
+            </div>
+            <div id="button-area"><br>
+                <label id="experience-label"><b>Quais tipos de exercício você já praticou?</b></label><br>
+                <input type="checkbox" name="exercise-type1" value="weight-training"> Musculação<br>
+                <input type="checkbox" name="exercise-type2" value="cardio"> Cardio (corrida, ciclismo, etc.)<br>
+                <input type="checkbox" name="exercise-type3" value="yoga"> Yoga/Pilates<br>
+                <input type="checkbox" name="exercise-type4" value="sports"> Esportes (futebol, basquete, etc.)<br>
+                <input type="checkbox" name="exercise-type5" value="other"> Outros<br>
+            </div>
+            <div id="ending"><br><br>
+                <label id="comments-label"><b>Descreva seus hábitos alimentares:</b></label><br>
+                <textarea style="height:120px;" class="form" placeholder="Ex: Pela manhã: Consumo pão, ovo e café..."></textarea><br><br>
+                <input id="submit" type="submit" class="form" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
